@@ -193,3 +193,94 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+
+
+/* ===== MANUTENÇÃO ===== */
+.maintenance-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 127, 120, 0.212),
+    rgba(14, 96, 90, 0.329)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.maintenance-box {
+  background: #ffffff;
+  max-width: 420px;
+  width: 90%;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  animation: fadeIn 0.6s ease;
+}
+
+.maintenance-icon {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.maintenance-box h1 {
+  color: #117f78;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.maintenance-box p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.contact-text {
+  font-weight: 600;
+  color: #333;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 30px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.maintenance-footer {
+  display: block;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
